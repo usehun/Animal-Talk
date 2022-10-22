@@ -1,0 +1,33 @@
+.user-display {
+  display: flex;
+  margin: 10px 0px;
+}
+
+.user-display-column:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.user-display-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+}
+
+.user-display-column div {
+  margin: 0px 15px;
+  height: 70%;
+}
+
+.user-display-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.user-display-subtitle {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 17px;
+}

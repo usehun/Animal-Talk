@@ -1,0 +1,13 @@
+.friend-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+}
+
+.header-icons {
+  display: flex;
+}
+
+.header-icons div {
+  margin-left: 20px;
+}
