@@ -6,7 +6,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 50px;
+  height: 55px;
   padding: 0px 30px;
   box-sizing: border-box;
   background-color: #f9f9fa;
@@ -17,17 +17,8 @@
 }
 
 .chat-notification {
-  background-color: tomato;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: black;
-  font-weight: bold;
   position: absolute;
-  top: -25px;
+  bottom: 15px;
   left: 15px;
 }
 

@@ -11,6 +11,7 @@
   width: 100%;
   position: fixed;
   box-sizing: border-box;
+  background-color: white;
 }
 
 .status-bar-column {

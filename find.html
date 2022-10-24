@@ -11,7 +11,7 @@
       src="https://kit.fontawesome.com/8957649a3e.js"
       crossorigin="anonymous"
     ></script>
-    <title>Friends - animal Talk</title>
+    <title>friend-header - animal Talk</title>
   </head>
   <body>
     <!-- 스테이터스 -->
@@ -34,65 +34,52 @@
 
     <!-- 헤더 -->
     <header class="friend-header">
-      <h1 class="header-title">친구</h1>
+      <h1 class="header-title">찾기</h1>
       <div class="header-icons">
         <div><i class="fa-solid fa-magnifying-glass fa-lg"></i></div>
-        <div><i class="fa-solid fa-music fa-lg"></i></div>
-        <div><i class="fa-solid fa-gear fa-lg"></i></div>
+        <div>
+          <i class="fa-solid fa-gear fa-lg"></i>
+          <div class="info-notification info-badge"></div>
+        </div>
       </div>
     </header>
 
-    <!-- 친구 알림 -->
-    <a class="friends-display">
-      <i class="fa-solid fa-circle-info"></i> Friend's Names Display
-      <i class="fa-solid fa-chevron-right fa-xs"></i>
-    </a>
-
     <!-- 메인 스크린 -->
     <main class="main-screen">
-      <!-- 사용자 화면 -->
-      <div class="user-display">
-        <div class="user-display-column">
-          <img
-            class="user-display-img user-display-img-xl"
-            src="src/user00.jpg"
-            alt=""
-          />
-          <div class="user-display-text">
-            <h4 class="user-display-title">Rabbit</h4>
-            <h6 class="user-display-subtitle">😀 행복하다</h6>
-          </div>
+      <!-- 아이콘 -->
+      <div class="find-icons">
+        <div class="find-icons-icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>QR Code</span>
         </div>
-        <div class="user-display-column"></div>
+        <div class="find-icons-icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="find-icons-icon">
+          <i class="fa-solid fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons-icon">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Invite</span>
+        </div>
       </div>
 
-      <!-- 채널 -->
-      <div class="display-channel">
-        <span class="channel-header">Channel</span>
-        <i class="fa-solid fa-chevron-up fa-xs"></i>
+      <!-- 추천 친구 -->
+      <div class="recommend">
+        <h6 class="recommend-title">Recommended Friends</h6>
+        <span>You have no recommended friends.</span>
       </div>
 
-      <!-- 유저화면 -->
-      <div class="user-display">
-        <!-- 유저화면 왼쪽 -->
-        <div class="user-display-column">
-          <img
-            class="user-display-img user-display-img-xs"
-            src="src/user00.jpg"
-            alt=""
-          />
-          <div class="user-display-text">
-            <h4 class="user-display-title user-display-title-not-bold">
-              Channel
-            </h4>
-          </div>
-        </div>
-        <!-- 유저화면 오른쪽 -->
-        <div class="user-display-column">
-          <div>
-            <span>2</span>
+      <!-- 오픈채팅 -->
+      <div class="open-chat">
+        <div class="open-chat-header">
+          <h4 class="open-chat-title">Open Chat</h4>
+          <span>
+            Go to Openchat Home
             <i class="fa-solid fa-chevron-right fa-xs"></i>
-          </div>
+          </span>
         </div>
       </div>
     </main>
@@ -102,7 +89,7 @@
       <ul class="nav-flex">
         <li>
           <a class="nav-link" href="friends.html">
-            <i class="fa-solid fa-user fa-2x"></i>
+            <i class="fa-regular fa-user fa-2x"></i>
           </a>
         </li>
         <li>
