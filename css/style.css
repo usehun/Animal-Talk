@@ -6,6 +6,7 @@
 @import "components/nav.css";
 @import "components/display.css";
 @import "components/badge.css";
+@import "components/icon.css";
 
 /* Screens */
 @import "screens/login.css";
