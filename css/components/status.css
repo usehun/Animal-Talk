@@ -14,6 +14,10 @@
   background-color: white;
 }
 
+.bar-color {
+  background-color: #abc1d1;
+}
+
 .status-bar-column {
   width: 33%;
 }

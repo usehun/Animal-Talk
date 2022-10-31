@@ -1,0 +1,28 @@
+.title {
+  display: flex;
+  padding: var(--margin-space);
+  align-items: center;
+  justify-content: center;
+}
+
+.title-column {
+  width: 33%;
+}
+
+.title-column:nth-child(2) {
+  text-align: center;
+}
+
+.title-column:last-child {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.title-header {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hamberger {
+  margin-left: 20px;
+}

@@ -1,0 +1,31 @@
+.setting-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.setting-setting {
+  padding: 20px 0px;
+  border-bottom: var(--main-border);
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.setting-setting span {
+  margin: 0px 15px;
+}
+
+.setting-column:last-child {
+  opacity: 0.7;
+}
+
+.left-btn {
+  width: 30px;
+  height: 48px;
+  position: absolute;
+  opacity: 0;
+}
+
+.left-btn:hover {
+  cursor: pointer;
+}

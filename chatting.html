@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/8957649a3e.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/chatting.js"></script>
+    <title>Chatting - animal Talk</title>
+  </head>
+  <body class="chatting-screen">
+    <!-- 스테이터스 -->
+    <div class="status-fixed">
+      <div class="status-bar bar-color">
+        <div class="status-bar-column">
+          <span>No Service</span>
+          <i class="fa-solid fa-wifi"></i>
+        </div>
+        <div class="status-bar-column">
+          <span>18:43</span>
+        </div>
+        <div class="status-bar-column">
+          <span>70%</span>
+          <i class="fa-solid fa-battery-three-quarters"></i>
+          <i class="fa-solid fa-bolt"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- 헤더 -->
+    <header class="title chat-title">
+      <div class="title-column">
+        <input class="left-btn" type="button" onClick="history.go(-1)" />
+        <i class="fa-solid fa-angle-left fa-2x"></i>
+      </div>
+      <div class="title-column">
+        <h1 class="title-header">Chat</h1>
+      </div>
+      <div class="title-column">
+        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+        <i class="fa-solid fa-bars fa-2x hamberger"></i>
+      </div>
+    </header>
+
+    <!-- 메인 스크린 -->
+    <main class="main-screen more-screen"></main>
+  </body>
+</html>

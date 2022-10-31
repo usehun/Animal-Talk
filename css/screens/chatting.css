@@ -1,0 +1,9 @@
+.chatting-screen {
+  height: 9999vh;
+  background-color: #abc1d1;
+  z-index: 99;
+}
+
+.chatting-screen .title {
+  /* position: absolute; */
+}
