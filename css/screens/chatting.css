@@ -4,6 +4,155 @@
   z-index: 99;
 }
 
-.chatting-screen .title {
-  /* position: absolute; */
+.status-fixed,
+.title-color {
+  background-color: #abc1d1;
+  z-index: 5;
+}
+
+@keyframes fadeIn {
+  from {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.chat-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s linear;
+}
+
+.chat-timestamp {
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+  font-size: 14px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.message-other {
+  width: 100%;
+  display: flex;
+  margin: 15px 0px;
+}
+
+.message-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+.message-info {
+  display: flex;
+  align-items: flex-end;
+}
+
+.message-author {
+  opacity: 0.8;
+  font-size: 14px;
+  margin: 5px;
+  display: block;
+  font-weight: bold;
+}
+
+.message-bubble {
+  background-color: white;
+  padding: 13px;
+  font-size: 18px;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  margin: 5px;
+}
+
+.message-time {
+  font-size: 13px;
+  opacity: 0.6;
+  margin: 5px;
+}
+
+.message-user {
+  justify-content: flex-end;
+}
+
+.message-user .message-bubble {
+  background-color: greenyellow;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 10px;
+}
+
+.message-user .message-info {
+  flex-direction: row-reverse;
+}
+
+.keyboard {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  box-sizing: border-box;
+}
+
+.reply-column:first-child {
+  width: 5%;
+  text-align: center;
+}
+
+.reply-column:last-child {
+  width: 95%;
+  margin-left: 15px;
+}
+
+.keyboard input {
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 25px;
+  padding: 10px 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.reply-column:last-child > i,
+.reply-column:last-child button {
+  position: absolute;
+  right: 29px;
+  top: 11px;
+}
+
+.reply-column:last-child > i {
+  top: 28px;
+  right: 80px;
+}
+
+.reply-column:last-child button {
+  background-color: greenyellow;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+}
+
+.reply-column i:not(button > i) {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.keyboard:focus-within .reply-column:first-child,
+.keyboard:focus-within .fa-face-smile,
+.keyboard:focus-within button {
+  opacity: 0;
+}
+
+.keyboard:focus-within input {
+  transform: scaleX(115%) translateX(-6%);
 }

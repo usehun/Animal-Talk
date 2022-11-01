@@ -8,3 +8,40 @@
 .friends-display i {
   opacity: 0.3;
 }
+
+.splash-left {
+  background-color: greenyellow;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: transform 1s ease-in-out;
+}
+
+/* .splash-right {
+  background-color: plum;
+  position: absolute;
+  width: 50vw;
+  height: 100vh;
+  top: 0;
+  right: 0px;
+  animation: right 1s ease-out;
+} */
+
+.left {
+  transform: translateX(-100%);
+  opacity: 0.5;
+}
+
+@keyframes right {
+  0% {
+    transform: translate(0);
+    display: none;
+  }
+
+  100% {
+    transform: translate(100%);
+    opacity: 0.5;
+  }
+}

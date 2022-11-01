@@ -22,3 +22,16 @@
 .info-badge {
   left: 20px !important;
 }
+
+@keyframes rotateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.header-icons .fa-gear:hover {
+  animation: rotateCog 2s linear infinite;
+}

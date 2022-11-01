@@ -1,8 +1,15 @@
+.header {
+  height: 70px;
+}
+
 .title {
   display: flex;
   padding: var(--margin-space);
   align-items: center;
   justify-content: center;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .title-column {

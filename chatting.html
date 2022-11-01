@@ -34,21 +34,77 @@
     </div>
 
     <!-- 헤더 -->
-    <header class="title chat-title">
-      <div class="title-column">
-        <input class="left-btn" type="button" onClick="history.go(-1)" />
-        <i class="fa-solid fa-angle-left fa-2x"></i>
-      </div>
-      <div class="title-column">
-        <h1 class="title-header">Chat</h1>
-      </div>
-      <div class="title-column">
-        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-        <i class="fa-solid fa-bars fa-2x hamberger"></i>
+    <header class="header">
+      <div class="title title-color">
+        <div class="title-column">
+          <input class="left-btn" type="button" onClick="history.go(-1)" />
+          <i class="fa-solid fa-angle-left fa-2x"></i>
+        </div>
+        <div class="title-column">
+          <h1 class="title-header">Chat</h1>
+        </div>
+        <div class="title-column">
+          <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+          <i class="fa-solid fa-bars fa-2x hamberger"></i>
+        </div>
       </div>
     </header>
 
     <!-- 메인 스크린 -->
-    <main class="main-screen more-screen"></main>
+    <main class="main-screen chat-screen">
+      <div class="chat-timestamp">Tuesday, June 30 , 2020</div>
+
+      <!-- 타인 메세지 -->
+      <div class="message-other">
+        <img class="message-img" src="src/user01.jpg" alt="" />
+        <div class="message-content">
+          <span class="message-author">Pig</span>
+          <div class="message-info">
+            <span class="message-bubble"
+              >Hi! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Perspiciatis sed distinctio placeat ex eveniet tenetur, eaque id
+              quo repellendus quis, eligendi repellat deleniti! Eaque unde,
+              maxime sit voluptates placeat ducimus! Deserunt nihil, eius odit
+              laborum deleniti mollitia voluptatem nesciunt adipisci distinctio
+              praesentium, quisquam similique voluptate quod labore hic voluptas
+              facilis a molestiae sunt, asperiores quam doloremque nobis.
+              Expedita, architecto placeat? Nulla, labore placeat. Blanditiis
+              fugiat quasi dolores minus sunt quam assumenda ipsam eos
+              repudiandae quas sit voluptates velit reprehenderit incidunt
+              reiciendis nesciunt, odit cum sapiente debitis similique quod
+              obcaecati repellendus? Expedita vel dicta voluptate quae
+              blanditiis rerum aperiam sit assumenda nesciunt similique dolorem
+              vero mollitia libero, temporibus sequi officia doloremque alias
+            </span>
+            <span class="message-time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 유저 메세지 -->
+      <div class="message-other message-user">
+        <div class="message-content">
+          <div class="message-info">
+            <span class="message-bubble">Nice to meet you!</span>
+            <span class="message-time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- 키보드 -->
+    <form action="" class="keyboard">
+      <div class="reply-column">
+        <i class="fa-regular fa-square-plus fa-2x"></i>
+      </div>
+      <div class="reply-column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="fa-regular fa-face-smile fa-lg"></i>
+
+        <button>
+          <i class="fa-solid fa-circle-arrow-up"></i>
+        </button>
+      </div>
+    </form>
   </body>
 </html>
