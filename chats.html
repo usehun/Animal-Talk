@@ -11,7 +11,9 @@
       src="https://kit.fontawesome.com/8957649a3e.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/clock.js"></script>
+    <script src="js/clock.js" defer></script>
+    <script src="js/chat.js" defer></script>
+
     <title>Chats - animal Talk</title>
   </head>
   <body>
@@ -23,7 +25,7 @@
           <i class="fa-solid fa-wifi"></i>
         </div>
         <div class="status-bar-column">
-          <span class="clock">18:43</span>
+          <span class="clock"></span>
         </div>
         <div class="status-bar-column">
           <span>70%</span>
@@ -43,7 +45,7 @@
         <div>
           <a href="setting.html">
             <i class="fa-solid fa-gear fa-lg"></i>
-            <div class="info-notification info-badge"></div>
+            <div class="info-notification info-chat-count"></div>
           </a>
         </div>
       </div>
@@ -69,7 +71,7 @@
           </div>
           <div class="user-display-column">
             <span>19:30</span>
-            <div class="badge">1</div>
+            <div class="chat-count">1</div>
           </div>
         </div>
       </a>
@@ -92,7 +94,7 @@
           </div>
           <div class="user-display-column">
             <span>19:30</span>
-            <div class="badge">1</div>
+            <div class="chat-count">2</div>
           </div>
         </div>
       </a>
@@ -115,7 +117,7 @@
           </div>
           <div class="user-display-column">
             <span>19:30</span>
-            <div class="badge">1</div>
+            <div class="chat-count">3</div>
           </div>
         </div>
       </a>
@@ -138,7 +140,7 @@
           </div>
           <div class="user-display-column">
             <span>19:30</span>
-            <div class="badge">1</div>
+            <div class="chat-count">4</div>
           </div>
         </div>
       </a>
@@ -161,7 +163,7 @@
           </div>
           <div class="user-display-column">
             <span>19:30</span>
-            <div class="badge">1</div>
+            <div class="chat-count">5</div>
           </div>
         </div>
       </a>
@@ -182,7 +184,7 @@
         </div>
         <div class="user-display-column">
           <span>19:30</span>
-          <div class="badge">1</div>
+          <div class="chat-count">1</div>
         </div>
       </div>
 
@@ -202,7 +204,7 @@
         </div>
         <div class="user-display-column">
           <span>19:30</span>
-          <div class="badge">1</div>
+          <div class="chat-count">1</div>
         </div>
       </div>
 
@@ -222,7 +224,7 @@
         </div>
         <div class="user-display-column">
           <span>19:30</span>
-          <div class="badge">1</div>
+          <div class="chat-count">1</div>
         </div>
       </div>
 
@@ -242,7 +244,7 @@
         </div>
         <div class="user-display-column">
           <span>19:30</span>
-          <div class="badge">1</div>
+          <div class="chat-count">1</div>
         </div>
       </div> -->
     </main>
@@ -257,7 +259,7 @@
         </li>
         <li>
           <a class="nav-link" href="chats.html">
-            <div class="chat-notification badge">1</div>
+            <div class="chat-notification chat-count total"></div>
             <i class="fa-solid fa-comment fa-2x"></i>
           </a>
         </li>

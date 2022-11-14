@@ -1,5 +1,5 @@
 .chatting-screen {
-  height: 9999vh;
+  height: 100vh;
   background-color: #abc1d1;
   z-index: 99;
 }
@@ -26,6 +26,7 @@
   flex-direction: column;
   align-items: center;
   animation: fadeIn 0.5s linear;
+  padding-bottom: 60px;
 }
 
 .chat-timestamp {
@@ -148,11 +149,18 @@
 }
 
 .keyboard:focus-within .reply-column:first-child,
-.keyboard:focus-within .fa-face-smile,
-.keyboard:focus-within button {
+.keyboard:focus-within .fa-face-smile {
   opacity: 0;
 }
 
 .keyboard:focus-within input {
   transform: scaleX(115%) translateX(-6%);
+}
+
+.keyboard button {
+  transition: transform linear 0.3s;
+}
+
+.keyboard:focus-within button {
+  transform: translateX(8%);
 }

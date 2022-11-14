@@ -11,7 +11,8 @@
       src="https://kit.fontawesome.com/8957649a3e.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/chatting.js"></script>
+    <script src="js/clock.js" defer></script>
+    <script src="js/chatting.js" defer></script>
     <title>Chatting - animal Talk</title>
   </head>
   <body class="chatting-screen">
@@ -23,7 +24,7 @@
           <i class="fa-solid fa-wifi"></i>
         </div>
         <div class="status-bar-column">
-          <span>18:43</span>
+          <span class="clock"></span>
         </div>
         <div class="status-bar-column">
           <span>70%</span>
@@ -98,7 +99,7 @@
         <i class="fa-regular fa-square-plus fa-2x"></i>
       </div>
       <div class="reply-column">
-        <input type="text" placeholder="Write a message..." />
+        <input type="text" placeholder="Write a message..." / class="text">
         <i class="fa-regular fa-face-smile fa-lg"></i>
 
         <button>
