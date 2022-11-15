@@ -15,6 +15,7 @@
     <script src="js/chat.js" defer></script>
     <script src="js/clock.js" defer></script>
     <script src="js/friend.js" defer></script>
+    <script src="js/display.js" defer></script>
     <title>Friends - animal Talk</title>
   </head>
   <body>
@@ -77,13 +78,38 @@
 
       <!-- 채널 -->
       <div class="display-channel">
-        <span class="channel-header">Channel</span>
-        <i class="fa-solid fa-chevron-up fa-xs"></i>
+        <div class="channel-flex">
+          <span class="channel-header">Channel</span>
+          <i class="fa-solid fa-chevron-up fa-xs arrow"></i>
+        </div>
       </div>
 
       <!-- 유저화면 -->
-      <div class="user-display">
+      <div class="user-display user-slider">
         <!-- 유저화면 왼쪽 -->
+        <div class="user-display-column">
+          <img
+            class="user-display-img user-display-img-xs"
+            src="src/user00.jpg"
+            alt=""
+          />
+          <div class="user-display-text">
+            <h4 class="user-display-title user-display-title-not-bold">
+              Channel
+            </h4>
+          </div>
+        </div>
+        <!-- 유저화면 오른쪽 -->
+        <div class="user-display-column">
+          <div>
+            <span>2</span>
+            <i class="fa-solid fa-chevron-right fa-xs"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- 친구화면 -->
+      <div class="friend-display">
         <div class="user-display-column">
           <img
             class="user-display-img user-display-img-xs"
