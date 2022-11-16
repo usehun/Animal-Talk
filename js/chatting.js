@@ -1,3 +1,7 @@
+const text = document.querySelector(".text");
+const keyBoard = document.querySelector(".keyboard");
+const chatScreen = document.querySelector(".chat-screen");
+
 function onloadScreen() {
   const status = document.querySelector(".status-bar");
 
@@ -5,10 +9,6 @@ function onloadScreen() {
 }
 
 window.addEventListener("load", onloadScreen);
-
-const text = document.querySelector(".text");
-const keyBoard = document.querySelector(".keyboard");
-const chatScreen = document.querySelector(".chat-screen");
 
 function onSubmit(event) {
   event.preventDefault();
@@ -47,6 +47,12 @@ function onSubmit(event) {
     handleDate();
 
     text.value = "";
+
+    window.scrollTo({
+      top: document.body.scrollHeight,
+      left: 0,
+      behavior: "smooth",
+    });
   }
 }
 
