@@ -1,6 +1,6 @@
 .display-channel {
   margin-top: 25px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   border-top: var(--main-border);
   padding-top: 15px;
   color: rgba(0, 0, 0, 0.5);
@@ -25,14 +25,20 @@
     opacity: 1;
   }
 
+  25% {
+    opacity: 0;
+    height: max-content/2;
+  }
+
   50% {
     opacity: 0;
+    height: max-content/3;
   }
 
   100% {
     transform: translateY(-30px);
     opacity: 0;
-    visibility: hidden;
+    height: 0;
   }
 }
 
@@ -56,12 +62,18 @@
 
   50% {
     opacity: 0;
+    height: max-content;
   }
 
   100% {
     transform: translateY(0px);
     opacity: 1;
+    height: max-content;
   }
+}
+
+.user-slider:first-child() .user-display-column {
+  border-top: var(--main-border);
 }
 
 .user-display {
